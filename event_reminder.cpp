@@ -35,3 +35,7 @@ void addEvent() {
     cout << "Enter event name: ";
     cin.ignore(); // Clears input buffer
 
+    getline(cin, newEvent.name); // Read event name
+    cout << "Enter event date (YYYY-MM-DD): ";
+    cin >> newEvent.date; // Read event date
+
