@@ -39,3 +39,7 @@ void addEvent() {
     cout << "Enter event date (YYYY-MM-DD): ";
     cin >> newEvent.date; // Read event date
 
+    events.push_back(newEvent); // Add event to the list
+    cout << "Event added successfully!\n";
+}
+
