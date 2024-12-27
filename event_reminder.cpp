@@ -92,3 +92,8 @@ void remindEvent() {
         }
     }
 
+    if (!found) {
+        cout << "No events scheduled for today.\n";
+    }
+}
+
