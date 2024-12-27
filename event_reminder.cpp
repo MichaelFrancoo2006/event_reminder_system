@@ -23,3 +23,10 @@ void remindEvent(); // Function to remind today's events
 bool isDateToday(const string& date); // Function to check if a date is today's date
 void menu(); // Menu function to handle user input
 
+// Main function to start the program
+int main() {
+    menu(); // Start the system with the menu
+    return 0;
+}
+
+
