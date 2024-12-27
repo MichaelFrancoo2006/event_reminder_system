@@ -29,4 +29,9 @@ int main() {
     return 0;
 }
 
+// Function to add a new event
+void addEvent() {
+    Event newEvent;
+    cout << "Enter event name: ";
+    cin.ignore(); // Clears input buffer
 
