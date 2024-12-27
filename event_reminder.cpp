@@ -120,3 +120,25 @@ void menu() {
         cout << "Enter your choice: ";
         cin >> choice;
 
+        switch (choice) {
+            case 1:
+                addEvent(); // Add a new event
+                break;
+            case 2:
+                displayEvents(); // Display all events
+                break;
+            case 3:
+                removeEvent(); // Remove an event
+                break;
+            case 4:
+                remindEvent(); // Remind today's events
+                break;
+            case 5:
+                cout << "Exiting...\n"; // Exit the system
+                break;
+            default:
+                cout << "Invalid choice. Try again.\n"; // Handle invalid input
+        }
+    } while (choice != 5);
+}
+
