@@ -102,3 +102,8 @@ bool isDateToday(const string& date) {
     time_t now = time(0); // Get current time
     tm* ltm = localtime(&now); // Convert to local time structure
 
+    char buffer[11];
+    strftime(buffer, sizeof(buffer), "%Y-%m-%d", ltm); // Format as YYYY-MM-DD
+    return date == string(buffer); // Compare dates
+}
+
