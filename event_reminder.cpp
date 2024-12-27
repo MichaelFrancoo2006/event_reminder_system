@@ -56,3 +56,10 @@ void displayEvents() {
     }
 }
 
+// Function to remove an event
+void removeEvent() {
+    if (events.empty()) {
+        cout << "No events to remove.\n";
+        return;
+    }
+
