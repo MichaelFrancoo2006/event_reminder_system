@@ -97,3 +97,8 @@ void remindEvent() {
     }
 }
 
+// Function to check if a date is today's date
+bool isDateToday(const string& date) {
+    time_t now = time(0); // Get current time
+    tm* ltm = localtime(&now); // Convert to local time structure
+
