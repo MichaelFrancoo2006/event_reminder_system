@@ -107,3 +107,16 @@ bool isDateToday(const string& date) {
     return date == string(buffer); // Compare dates
 }
 
+// Menu function to handle user input
+void menu() {
+    int choice;
+    do {
+        cout << "\nEvent Reminder System\n";
+        cout << "1. Add Event\n";
+        cout << "2. Display Events\n";
+        cout << "3. Remove Event\n";
+        cout << "4. Remind Today's Events\n";
+        cout << "5. Exit\n";
+        cout << "Enter your choice: ";
+        cin >> choice;
+
