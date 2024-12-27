@@ -63,3 +63,8 @@ void removeEvent() {
         return;
     }
 
+    int index;
+    displayEvents(); // Show all events
+    cout << "Enter the number of the event to remove: ";
+    cin >> index; // Read the index of the event to remove
+
