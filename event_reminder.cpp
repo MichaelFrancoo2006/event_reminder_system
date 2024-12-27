@@ -5,3 +5,10 @@
 #include <ctime> // C time library
 // Use standard namespace
 using namespace std;
+
+// Structure to store event details
+struct Event {
+    string name; // Event name
+    string date; // Format: "YYYY-MM-DD"
+};
+
