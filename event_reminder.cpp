@@ -50,3 +50,9 @@ void displayEvents() {
         return;
     }
 
+    cout << "Scheduled Events:\n";
+    for (size_t i = 0; i < events.size(); ++i) {
+        cout << i + 1 << ". " << events[i].name << " on " << events[i].date << "\n";
+    }
+}
+
