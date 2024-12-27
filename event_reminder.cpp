@@ -12,3 +12,6 @@ struct Event {
     string date; // Format: "YYYY-MM-DD"
 };
 
+// Global vector to store all events
+vector<Event> events;
+
