@@ -83,3 +83,12 @@ void remindEvent() {
         return;
     }
 
+    cout << "Today's Events:\n";
+    bool found = false;
+    for (const auto& event : events) {
+        if (isDateToday(event.date)) {
+            cout << "- " << event.name << " on " << event.date << "\n";
+            found = true;
+        }
+    }
+
