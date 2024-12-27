@@ -76,3 +76,10 @@ void removeEvent() {
     }
 }
 
+// Function to remind today's events
+void remindEvent() {
+    if (events.empty()) {
+        cout << "No events to remind.\n";
+        return;
+    }
+
