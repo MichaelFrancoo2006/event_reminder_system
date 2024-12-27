@@ -43,3 +43,10 @@ void addEvent() {
     cout << "Event added successfully!\n";
 }
 
+// Function to display all events
+void displayEvents() {
+    if (events.empty()) {
+        cout << "No events scheduled.\n";
+        return;
+    }
+
