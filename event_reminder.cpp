@@ -68,3 +68,11 @@ void removeEvent() {
     cout << "Enter the number of the event to remove: ";
     cin >> index; // Read the index of the event to remove
 
+    if (index > 0 && index <= events.size()) {
+        events.erase(events.begin() + index - 1); // Remove event
+        cout << "Event removed successfully!\n";
+    } else {
+        cout << "Invalid selection.\n";
+    }
+}
+
