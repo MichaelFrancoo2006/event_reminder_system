@@ -15,3 +15,11 @@ struct Event {
 // Global vector to store all events
 vector<Event> events;
 
+// Function prototypes
+void addEvent(); // Function to add a new event
+void displayEvents(); // Function to display all events
+void removeEvent(); // Function to remove an event
+void remindEvent(); // Function to remind today's events
+bool isDateToday(const string& date); // Function to check if a date is today's date
+void menu(); // Menu function to handle user input
+
